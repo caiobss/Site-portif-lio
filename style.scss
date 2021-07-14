@@ -1,0 +1,48 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+.img-wrapper{
+    background-color: rgba(0, 0, 0, 0.692);
+}
+.img-wrapper img{
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.banner{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+}
+.banner h1{
+    line-height: 4.5rem;
+    color: white;
+    font-size: 3.5rem ;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 100;
+    text-shadow: .3rem .4rem 2px rgba(0,0,0,.4);/*o .3rem representa aonde a sobra vai estar em relação a direita da pagina*/
+                                                    /* o .4rem representa aonde a sombra estará em relação ao top*/
+                                                    /*O 2px representa o blur.*/
+    margin-bottom: 2rem;
+}
+.banner p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2rem;
+    text-shadow: .2rem .2rem 2px rgba(0,0,0,.4);
+    color: white;
+}
+.banner button{
+    margin-top: 20px;
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    background-color: rgb(69, 69, 187);
+    padding: 10px 35px;
+}
