@@ -12,6 +12,7 @@
     list-style: none;
 }
 .hamburguer{
+    background-color: blue;
     height: 2rem;
     width: 2rem;
     position: fixed;
@@ -24,14 +25,25 @@
     cursor: pointer;
     transition: 0.5s;
 }
-.hamburguer.mostre-menu{
-    right: 15rem;
+.mostre-menu .hamburguer{
+    right: 16rem;
 }
 .linhas{
     width: 100%;
     background-color: #fff;
     height: .1rem;
     box-shadow: 0.1rem 0.1rem 1px black;
+}
+.mostre-menu #linha1{
+    transform: rotate(-45deg) translate(-0.2rem,0.9rem);
+}
+.mostre-menu #linha2{
+    opacity: 0;
+    visibility: hidden;
+
+}
+.mostre-menu #linha3{
+    transform: rotate(45deg) translate(0.2rem,-0.9rem);
 }
 header{
     width: 100%;
@@ -116,11 +128,10 @@ header{
     height: 100vh;
     position: fixed;
     top: 0%;
-    right: 0%;
     right: -20rem;
     transition: 0.5s;
 }
-.sidebar.mostre-menu{
+.mostre-menu .sidebar{
     right: 0%;
 }
 .menu{
