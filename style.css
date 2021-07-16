@@ -1,5 +1,11 @@
 @charset "UTF-8";
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+:root {
+  --fonte-primaria:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  --fonte-secundaria:Verdana, Geneva, Tahoma, sans-serif;
+  --fonte-tercearia:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -90,7 +96,7 @@ header {
   line-height: 4.5rem;
   color: white;
   font-size: 3.5rem;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--fonte-primaria);
   font-weight: 200;
   text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
   /*o .3rem representa aonde a sobra vai estar em relação a direita da pagina*/
@@ -104,7 +110,7 @@ header {
 
 .banner p {
   margin-bottom: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--fonte-secundaria);
   font-size: 2rem;
   text-shadow: 0.2rem 0.2rem rgba(0, 0, 0, 0.4);
   color: white;
@@ -114,7 +120,7 @@ header {
 }
 
 .banner button {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: var(--fonte-tercearia);
   font-size: 1.2rem;
   background-color: #7F00FF;
   background: -webkit-gradient(linear, right top, left top, from(#E100FF), to(#7F00FF));
@@ -172,21 +178,49 @@ header {
 
 .menu {
   position: absolute;
-  top: 40%;
+  top: 47%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
 
+.menu-item {
+  text-align: center;
+  margin-bottom: .5rem;
+}
+
 .menu-link {
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: var(--fonte-tercearia);
   font-size: 1.8rem;
-  color: #1b1b1b;
-  line-height: 3.5rem;
+  color: #555;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.menu-link:hover {
+  color: #903ce4;
 }
 
 .midia-social {
   position: absolute;
-  top: 90%;
+  bottom: 2rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.midia-social i {
+  color: grey;
+  font-size: 2rem;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.midia-social i:hover {
+  color: #426bda;
 }
 /*# sourceMappingURL=style.css.map */
