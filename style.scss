@@ -22,6 +22,10 @@
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+    transition: 0.5s;
+}
+.hamburguer.mostre-menu{
+    right: 15rem;
 }
 .linhas{
     width: 100%;
@@ -112,6 +116,11 @@ header{
     height: 100vh;
     position: fixed;
     top: 0%;
+    right: 0%;
+    right: -20rem;
+    transition: 0.5s;
+}
+.sidebar.mostre-menu{
     right: 0%;
 }
 .menu{

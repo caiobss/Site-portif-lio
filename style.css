@@ -33,6 +33,12 @@
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   cursor: pointer;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.hamburguer.mostre-menu {
+  right: 15rem;
 }
 
 .linhas {
@@ -173,6 +179,13 @@ header {
   height: 100vh;
   position: fixed;
   top: 0%;
+  right: 0%;
+  right: -20rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.sidebar.mostre-menu {
   right: 0%;
 }
 
