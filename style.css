@@ -47,6 +47,8 @@
   height: .1rem;
   -webkit-box-shadow: 0.1rem 0.1rem 1px black;
           box-shadow: 0.1rem 0.1rem 1px black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .mostre-menu #linha1 {
@@ -62,6 +64,32 @@
 .mostre-menu #linha3 {
   -webkit-transform: rotate(45deg) translate(0.2rem, -0.9rem);
           transform: rotate(45deg) translate(0.2rem, -0.9rem);
+}
+
+.hamburguer span {
+  position: absolute;
+  left: 3rem;
+  height: 2rem;
+  width: 6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #a044ff;
+  color: white;
+  font-size-adjust: var(--fonte-secundaria);
+  opacity: 0;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.mostre-menu .hamburguer:hover span {
+  opacity: 1;
 }
 
 header {
@@ -144,6 +172,7 @@ header {
   font-family: var(--fonte-tercearia);
   font-size: 1.2rem;
   background-color: #7F00FF;
+  /*Estilização do botão da página*/
   background: -webkit-gradient(linear, right top, left top, from(#E100FF), to(#7F00FF));
   background: linear-gradient(to left, #E100FF, #7F00FF);
   padding: 11px 35px;

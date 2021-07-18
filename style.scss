@@ -32,6 +32,7 @@
     background-color: #fff;
     height: .1rem;
     box-shadow: 0.1rem 0.1rem 1px black;
+    transition: 0.5s;
 }
 .mostre-menu #linha1{
     transform: rotate(-45deg) translate(-0.2rem,0.9rem);
@@ -43,6 +44,23 @@
 }
 .mostre-menu #linha3{
     transform: rotate(45deg) translate(0.2rem,-0.9rem);
+}
+.hamburguer span{
+    position: absolute;
+    left: 3rem;
+    height: 2rem;
+    width: 6rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: #a044ff;
+    color: white;
+    font-size-adjust: var(--fonte-secundaria);
+    opacity: 0;
+    transition: 0.8s;
+}
+.mostre-menu .hamburguer:hover span{
+    opacity: 1;
 }
 header{
     width: 100%;
@@ -98,7 +116,7 @@ header{
     font-family:var(--fonte-tercearia);
     font-size: 1.2rem;
     background-color: #7F00FF;
-    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+    background: -webkit-linear-gradient(to right, #E100FF, #7F00FF); /*Estilização do botão da página*/
     background: linear-gradient(to left, #E100FF, #7F00FF);
     padding: 11px 35px;
     margin-bottom: 3rem;
