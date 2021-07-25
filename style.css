@@ -4,6 +4,8 @@
   --fonte-primaria:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   --fonte-secundaria:Verdana, Geneva, Tahoma, sans-serif;
   --fonte-tercearia:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+  --cor-primaria:rgb(139, 45, 202);
+  --cor-secundaria:rgb(80, 80, 80);
 }
 
 * {
@@ -290,12 +292,36 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 1rem;
 }
 
 .sessao-header h1 {
-  font-family: var(--fonte-tercearia);
-  font-weight: 100;
+  font-family: var(--fonte-primaria);
+  font-weight: 400;
+  font-size: 2.8rem;
+  color: var(--cor-secundaria);
+  border-bottom: 3px solid var(--cor-primaria);
+}
+
+.conhecimento-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.conhecimento-header h3 {
+  font-family: var(--fonte-primaria);
+  font-size: 1.6rem;
+  padding-left: 1rem;
+  color: var(--cor-secundaria);
+}
+
+.conhecimento-header i {
   font-size: 2rem;
+  color: var(--cor-primaria);
 }
 
 .conhecimentos {
@@ -306,10 +332,12 @@ header {
   -ms-grid-rows: (6rem)[6];
       grid-template-rows: repeat(6, 6rem);
   row-gap: .5rem;
+  color: var(--cor-secundaria);
+  margin-top: 2rem;
 }
 
-.conhecimentos i {
-  font-size: 1.5rem;
+.conhecimento-text {
+  margin-top: 1rem;
 }
 
 .conhecimento:nth-child(1) {
@@ -326,7 +354,8 @@ header {
   -ms-grid-column-span: 3;
   grid-column: 2/5;
   -ms-grid-row: 3;
-  grid-row: 3/3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
 }
 
 .conhecimento:nth-child(3) {
@@ -351,7 +380,8 @@ header {
   -ms-grid-column-span: 3;
   grid-column: 13/16;
   -ms-grid-row: 3;
-  grid-row: 3/3;
+  -ms-grid-row-span: 3;
+  grid-row: 3/6;
 }
 
 .conhecimento:nth-child(6) {
@@ -360,5 +390,20 @@ header {
   grid-column: 11/14;
   -ms-grid-row: 5;
   grid-row: 5/5;
+}
+
+.conhecimento-img-wrapper {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 4;
+  grid-column: 7/11;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 4;
+  grid-row: 3/7;
+}
+
+.conhecimento-img-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
