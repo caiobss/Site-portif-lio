@@ -228,6 +228,7 @@ header {
   right: -20rem;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+  z-index: 99;
 }
 
 .mostre-menu .sidebar {
@@ -293,6 +294,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
   margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
 .sessao-header h1 {
@@ -405,5 +407,57 @@ header {
   -o-object-fit: cover;
      object-fit: cover;
   width: 100%;
+}
+
+.projetos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.card {
+  width: 18rem;
+  height: 25rem;
+  position: relative;
+}
+
+.card-img-wrapper {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.822);
+}
+
+.card-img-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  opacity: 0.5;
+}
+
+.card-info {
+  position: absolute;
+  width: 13rem;
+  top: 45%;
+  left: 10%;
+  color: white;
+  text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.856);
+}
+
+.card-info h2 {
+  margin-bottom: 20px;
+}
+
+.card-info p {
+  margin-top: 10px;
+}
+
+.card-info button {
+  margin-top: 10px;
 }
 /*# sourceMappingURL=style.css.map */
