@@ -47,8 +47,8 @@
   width: 100%;
   background-color: #fff;
   height: .1rem;
-  -webkit-box-shadow: 0.1rem 0.1rem 1px black;
-          box-shadow: 0.1rem 0.1rem 1px black;
+  -webkit-box-shadow: 0.1rem 0.1rem 1px  black;
+          box-shadow: 0.1rem 0.1rem 1px  black;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -150,9 +150,6 @@ header {
   font-family: var(--fonte-primaria);
   font-weight: 200;
   text-shadow: 0.3rem 0.4rem 2px rgba(0, 0, 0, 0.4);
-  /*o .3rem representa aonde a sobra vai estar em relação a direita da pagina*/
-  /* o .4rem representa aonde a sombra estará em relação ao top*/
-  /*O 2px representa o blur.*/
   margin-bottom: 2rem;
   -webkit-animation: moverbanner 1s 0.2s forwards;
           animation: moverbanner 1s 0.2s forwards;
@@ -293,8 +290,8 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 1rem;
   margin-bottom: 2rem;
+  margin-top: 1.2rem;
 }
 
 .sessao-header h1 {
@@ -340,6 +337,8 @@ header {
 
 .conhecimento-text {
   margin-top: 1rem;
+  font-family: var(--fonte-secundaria);
+  font-size: .9rem;
 }
 
 .conhecimento:nth-child(1) {
@@ -428,7 +427,7 @@ header {
   width: 100%;
   height: 100%;
   border-radius: 10px;
-  background-color: rgba(0, 0, 0, 0.822);
+  background-color: rgba(0, 0, 0, 0.76);
 }
 
 .card-img-wrapper img {
@@ -437,27 +436,99 @@ header {
   width: 100%;
   height: 100%;
   border-radius: 10px;
+  opacity: 0.8;
+  -webkit-transition: opacity 0.3s;
+  transition: opacity 0.3s;
+}
+
+.card:hover .card-img-wrapper img {
   opacity: 0.5;
 }
 
 .card-info {
   position: absolute;
-  width: 13rem;
-  top: 45%;
-  left: 10%;
-  color: white;
-  text-shadow: 0.1rem 0.1rem 1px rgba(0, 0, 0, 0.856);
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  text-shadow: .1rem .2rem .3rem black;
+  padding: 2rem;
 }
 
 .card-info h2 {
+  font-family: var(--fonte-primaria);
+  font-weight: 300;
+  font-size: 2rem;
   margin-bottom: 20px;
+  color: whitesmoke;
+}
+
+.card-info h3 {
+  font-family: var(--fonte-tercearia);
+  font-weight: bolder;
+  color: #ff709e;
 }
 
 .card-info p {
+  font-family: var(--fonte-secundaria);
+  font-weight: 300;
+  font-size: 0.9rem;
   margin-top: 10px;
+  color: whitesmoke;
 }
 
 .card-info button {
-  margin-top: 10px;
+  background-color: #7F00FF;
+  /*Estilização do botão da página*/
+  background: -webkit-gradient(linear, right top, left top, from(#E100FF), to(#7F00FF));
+  background: linear-gradient(to left, #E100FF, #7F00FF);
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  color: whitesmoke;
+  margin-top: 20px;
+  font-family: var(--fonte-tercearia);
+  -webkit-box-shadow: .1rem .2rem 1px black;
+          box-shadow: .1rem .2rem 1px black;
+}
+
+.card:hover .card-info {
+  bottom: 2rem;
+  opacity: 1;
+  visibility: visible;
+}
+
+.card-info button:hover {
+  background: #5f00be;
+}
+
+.sessao-contato {
+  width: 100%;
+  height: 100vh;
+  background-color: #272727;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contato-wrapper {
+  width: 60%;
+  height: 30rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contato-left {
+  width: 35%;
+  background: url(/imagens/diana-akhmetianova-s358rpxEALI-unsplash.jpg);
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */
