@@ -139,7 +139,7 @@ header {
 
 .banner {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 5%;
 }
 
@@ -330,7 +330,7 @@ header {
       grid-template-columns: repeat(16, 1fr);
   -ms-grid-rows: (6rem)[6];
       grid-template-rows: repeat(6, 6rem);
-  row-gap: .5rem;
+  row-gap: .3rem;
   color: var(--cor-secundaria);
   margin-top: 2rem;
 }
