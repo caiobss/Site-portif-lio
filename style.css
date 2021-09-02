@@ -524,11 +524,83 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.521);
+          box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.521);
 }
 
 .contato-left {
   width: 35%;
-  background: url(/imagens/diana-akhmetianova-s358rpxEALI-unsplash.jpg);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(15, 15, 15, 0.6)), to(rgba(22, 22, 22, 0.9))), url(/imagens/diana-akhmetianova-s358rpxEALI-unsplash.jpg);
+  background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)), url(/imagens/diana-akhmetianova-s358rpxEALI-unsplash.jpg);
   background-size: cover;
+}
+
+.contato-right {
+  background-color: white;
+  width: 65%;
+  padding: 1rem 3rem 3rem 3rem;
+}
+
+.sessao-contato h1 {
+  font-family: var(--fonte-primaria);
+  font-size: 3rem;
+  font-weight: lighter;
+  color: var(--cor-secundaria);
+  text-align: center;
+}
+
+.sessao-contato form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.input-group {
+  position: relative;
+}
+
+.field {
+  background: transparent;
+  border: none;
+  width: 20rem;
+  height: 3rem;
+  font-size: 1.2rem;
+  font-family: var(--fonte-secundaria);
+  border-bottom: 2px dashed gray;
+  outline: none;
+  margin: 2rem 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.input-group textarea {
+  padding-top: 1rem;
+}
+
+.field-label {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  font-family: var(--fonte-secundaria);
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.field:focus ~ label {
+  top: 0;
+  font-size: 1rem;
 }
 /*# sourceMappingURL=style.css.map */

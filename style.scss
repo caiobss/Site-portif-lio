@@ -345,9 +345,61 @@ header{
     width: 60%;
     height: 30rem;
     display: flex;
+    box-shadow: 0 3rem 5rem rgba(0, 0, 0, 0.521) ;
 }
 .contato-left{
     width: 35%;
-    background: url(/imagens/diana-akhmetianova-s358rpxEALI-unsplash.jpg);
+        background: linear-gradient(rgba(15, 15, 15, 0.6), rgba(22, 22, 22, 0.9)),
+        url(/imagens/diana-akhmetianova-s358rpxEALI-unsplash.jpg);
     background-size: cover;
+}
+.contato-right{
+    background-color: white;
+    width: 65%;
+    padding: 1rem 3rem 3rem 3rem;
+}
+.sessao-contato h1{
+    font-family: var(--fonte-primaria);
+    font-size: 3rem;
+    font-weight: lighter;
+    color: var(--cor-secundaria);
+    text-align: center;
+}
+.sessao-contato form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.input-group{
+    position: relative;
+}
+.field{
+    background: transparent;
+    border: none;
+    width: 20rem;
+    height: 3rem;
+    font-size: 1.2rem;
+    font-family: var(--fonte-secundaria) ;
+    border-bottom: 2px dashed gray;
+    outline: none;
+    margin: 2rem 0;
+    transition: 0.3s;
+}
+.input-group textarea{
+    padding-top: 1rem;
+}
+.field-label{
+    position: absolute;
+    top: 2rem;
+    left: 0;
+    font-family: var(--fonte-secundaria);
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    margin: 1rem 0;
+    transition: 0.3s;
+}
+.field:focus ~ label{
+    top: 0;
+    font-size: 1rem;
 }
