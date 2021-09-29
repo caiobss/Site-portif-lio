@@ -170,12 +170,37 @@
                             <textarea class="field" id="mensagem"></textarea>
                             <label for="mensagem" class="field-label">Mensagem</label>
                         </div>
-                        <button type="submit">Enviar</button>
+                        <button type="submit" class="btn-submit">Enviar</button>
                     </form>
                 </div>
             </div>
         </section>
         
+        <section class ='sessao-orcamento'>
+            <div class="orcamento-wrapper">
+                <h1>Faça um orçamento</h1>
+                <form action="">
+                    <label for="quantidade">Quantidade de páginas</label>
+                    <input type="text" name="quantidade" id="quantidade">
+                    <label for="js">Preciso de um script JS</label>
+                    <input type="checkbox" name="js" id="js">
+                    <label for="">Layout</label>
+                    <div class="group-layout">
+                        <div class="">
+                            <input type="radio" name="layout" id="layout-sim">
+                            <label for="layout-sim">Preciso de um layout</label>
+                        </div>
+                        <div class="">
+                            <input type="radio" name="layout" id="layout-nao">
+                            <label for="layout-nao">Já tenho um layout</label>
+                        </div>
+                        <label for="prazo"></label>
+                        <input type="range" name="prazo" id="prazo">
+                        <button class="bnt btn-orcamento" type="submit">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </section>
     </div>
     <script src="script.js"></script>
 </body>

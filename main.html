@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css);
+        *{
+            margin: 0%;
+            padding: 0%;
+            box-sizing: border-box;
+            list-style: none;
+            text-decoration: none;
+        }
+        body{
+            overflow-x: hidden;
+        }
+        header{
+            position: relative;
+            height: 100vh;
+            width: 100%;
+            overflow: hidden;
+        }
+        .txt-header{
+            position: absolute;
+            top: 50%;
+            left: 10%;
+        }
+        .img-portifolio{
+            height: 100%;
+            width: 100%;
+        }
+        .img-portifolio img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .sidebar{
+            position: fixed;
+            background-color: blueviolet;
+            height: 100vh;
+            width: 22rem;
+            right: -22rem;
+            transition: .4s;
+            z-index: 100;
+        }
+        .mostre-sidebar .sidebar{
+            right: 0%;
+        }
+        .menu{
+            position: absolute;
+            top:50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        .links{
+            line-height: 6rem;
+            text-align: center;
+        }
+        .links-a{
+            color: white;
+        }
+        .midia-social{
+            position: absolute;
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            bottom: 2rem;
+        }
+        .midia-social i{
+            font-size: 1.5rem;
+        }
+        .hamburguer{
+            z-index: 100;
+            position: fixed;
+            top: 2rem;
+            right: 2rem;
+            height: 2rem;
+            width: 2rem;
+            transition: .4s;
+            cursor: pointer;
+        }
+        .mostre-sidebar .hamburguer{
+            right: 17rem;
+        }
+        .line{
+            height: .1rem;
+            width: 100%;
+            margin: .4rem;
+            background-color: black;
+        }
+        .section-projetos{
+            height: 100vh;
+            width: 100%;
+        }
+        .projetos{
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        .img-projeto{
+            height: 25rem;
+            width: 18rem;
+        }
+        .img-projeto img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+        .txt-projeto{
+            position: absolute;
+            width: 18rem;
+            bottom: 0;
+            padding: 2rem;
+            opacity: 0;
+            transition: .5s;
+        }
+        .projeto:hover .txt-projeto{
+            bottom: 5rem;
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="sidebar">
+                <ul class="menu">
+                    <li class="links"><a href="#" class="links-a">HOMsasdasE</a></li>
+                    <li class="links"><a href="#" class="links-a">HOasdME</a></li>
+                    <li class="links"><a href="#" class="links-a">HasdOME</a></li>
+                    <li class="links"><a href="#" class="links-a">HasdOME</a></li>
+                </ul>
+                <div class="midia-social">
+                    <i class="fab fa-github"><a href="#"></a></i>
+                    <i class="fab fa-instagram"><a href="#"></a></i>
+                    <i class="fab fa-linkedin-in"><a href="#"></a></i>
+                </div>
+            </div>
+        </aside>
+        <header>
+            <div class="img-portifolio">
+                <img src="/imagens/diana-akhmetianova-s358rpxEALI-unsplash.jpg" alt="">
+            </div>
+            <div class="txt-header">
+                <h1>aaaaaaaaa</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Maxime consequuntur sint </p>
+                <button>Saiba mais</button>
+            </div>
+        </header>
+        <div class="hamburguer">
+            <div class="line" id="line1"></div>
+            <div class="line" id="line2"></div>
+            <div class="line" id="line3"></div>
+        </div>
+        <section class="section-projetos">
+            <div class="tittle-header">
+                <h1>Projetos</h1>
+            </div>
+            <div class="projetos">
+                <div class="projeto">
+                    <div class="img-projeto">
+                        <img src="/imagens/kelly-sikkema-Dx1b5ucschA-unsplash.jpg" alt="">
+                    </div>
+                    <div class="txt-projeto">
+                        <h2>heheheh</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestias aperiam dicta quia maxime architecto amet dolores cupiditate recusandae nihil!</p>
+                        <button>saiba mais</button>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <div class="img-projeto">
+                        <img src="/imagens/kelly-sikkema-Dx1b5ucschA-unsplash.jpg" alt="">
+                    </div>
+                    <div class="txt-projeto">
+                        <h2>heheheh</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestias aperiam dicta quia maxime architecto amet dolores cupiditate recusandae nihil!</p>
+                        <button>saiba mais</button>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <div class="img-projeto">
+                        <img src="/imagens/kelly-sikkema-Dx1b5ucschA-unsplash.jpg" alt="">
+                    </div>
+                    <div class="txt-projeto">
+                        <h2>heheheh</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam molestias aperiam dicta quia maxime architecto amet dolores cupiditate recusandae nihil!</p>
+                        <button>saiba mais</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        const hamburguer = document.querySelector('.hamburguer')
+        hamburguer.addEventListener('click', clicar)
+        function clicar(){
+            const sidebar = document.querySelector('.container')
+            sidebar.classList.toggle("mostre-sidebar")
+        }
+    </script>
+</body>
+</html>
